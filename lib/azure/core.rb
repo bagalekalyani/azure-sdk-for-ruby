@@ -31,7 +31,8 @@ Azure.configure do |config|
   config.sb_access_key  = ENV["AZURE_SERVICEBUS_ACCESS_KEY"]
   config.sb_issuer      = ENV["AZURE_SERVICEBUS_ISSUER"]
 
-  config.management_certificate  = ENV["AZURE_MANAGEMENT_CERTIFICATE"]
+  config.management_certificate       = ENV["AZURE_MANAGEMENT_CERTIFICATE"]
+  config.management_certificate_type  = ENV["AZURE_MANAGEMENT_CERTIFICATE_TYPE"]
   config.subscription_id         = ENV["AZURE_SUBSCRIPTION_ID"]
   config.management_endpoint     = ENV["AZURE_MANAGEMENT_ENDPOINT"]
   config.sql_database_management_endpoint = ENV["AZURE_SQL_DATABASE_MANAGEMENT_ENDPOINT"]

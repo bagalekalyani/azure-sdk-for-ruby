@@ -33,6 +33,7 @@ namespace :test do
       ENV.fetch("AZURE_SERVICEBUS_ACCESS_KEY", nil),
       # ENV.fetch("AZURE_SERVICEBUS_ISSUER",     nil)
       ENV.fetch('AZURE_MANAGEMENT_CERTIFICATE', nil),
+      ENV.fetch('AZURE_MANAGEMENT_CERTIFICATE_TYPE', nil),
       ENV.fetch('AZURE_SUBSCRIPTION_ID', nil)
     ].include?(nil)
 
@@ -117,6 +118,7 @@ namespace :test do
       config.sb_access_key  = ENV.fetch("AZURE_SERVICEBUS_ACCESS_KEY")
       # config.sb_issuer      = ENV.fetch("AZURE_SERVICEBUS_ISSUER")
       config.management_certificate  = ENV.fetch('AZURE_MANAGEMENT_CERTIFICATE')
+      config.management_certificate_type  = ENV.fetch('AZURE_MANAGEMENT_CERTIFICATE_TYPE')
       config.management_endpoint  = ENV.fetch("AZURE_MANAGEMENT_ENDPOINT")
       config.sql_database_management_endpoint = ENV.fetch("AZURE_SQL_DATABASE_MANAGEMENT_ENDPOINT")
       config.subscription_id  = ENV.fetch("AZURE_SUBSCRIPTION_ID")

@@ -154,6 +154,7 @@ module Azure
 
       # Public: Get the Subscription Id and certificate key for the management API.
       attr_accessor :management_certificate
+      attr_accessor :management_certificate_type
 
       # Public: Get/Set the Subscription Id  for the management API.
       attr_accessor :subscription_id
